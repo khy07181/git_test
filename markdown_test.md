@@ -6,4 +6,4 @@
 
 <img src = "https://github.com/qlalzl9/TIL/blob/master/Servlet_JSP/img/Cookie_1.png" width="400px" align="center">
 
-<p align="center"><img src = "https://github.com/qlalzl9/TIL/blob/master/Servlet_JSP/img/EL_1.jpg" width:100% height:100%></p>
+<p align="center"><img src = "https://github.com/qlalzl9/TIL/blob/master/Servlet_JSP/img/EL_1.jpg" width="100%" height="100%"></p>
