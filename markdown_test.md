@@ -18,3 +18,5 @@ mysql –uroot  -p
 
 `` mysql –uroot  -p ``
 `mysql –uroot  -p`
+
+    mysql –uroot  -p
