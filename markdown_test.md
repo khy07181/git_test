@@ -9,6 +9,11 @@
 <p align="center"><img src = "https://github.com/qlalzl9/TIL/blob/master/Servlet_JSP/img/EL_1.jpg" width="100%" height="auto"></p>
 
 코드
+
+```sql
+mysql –uroot  -p
+```
+
 ```mysql –uroot  -p```
 
 `` mysql –uroot  -p ``
