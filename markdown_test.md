@@ -1,11 +1,30 @@
 # 마크다운 테스트 파일
 
-- 마크다운 링크 새 창으로 열기
+- 마크 다운 머스테치 파일 형식 테스트
+```html
+{{>layout/header}}
 
-[Link to Google](https://www.google.com/){: target="_blank"}
+<h1>게시글 등록</h1>
 
-['test'](https://www.google.com/){: target="_blank" }
-
-[링크이름](https://www.google.com/){: target="_blank"}
-
-<a href="https://www.google.com/" target="_blank">example</a>
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="author">작성자</label>
+                <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="content">내용</label>
+                <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
+            </div>
+        </form>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+    </div>
+</div>
+{{>layout/footer}} 
+```
