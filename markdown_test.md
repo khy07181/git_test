@@ -1,7 +1,7 @@
 # 마크다운 테스트 파일
 
 - 마크 다운 머스테치 파일 형식 테스트
-```html
+```mustache
 {{>layout/header}}
 
 <h1>게시글 등록</h1>
@@ -26,5 +26,6 @@
         <button type="button" class="btn btn-primary" id="btn-save">등록</button>
     </div>
 </div>
+
 {{>layout/footer}} 
 ```
