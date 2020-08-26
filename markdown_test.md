@@ -1,31 +1,37 @@
 # 마크다운 테스트 파일
 
-- 마크 다운 머스테치 파일 형식 테스트
-```mustache
-{{>layout/header}}
+- 마크 다운 gradle 코드 테스트
+```gradle
+// 플러그인 의존성 관리 설정
+buildscript {
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
 
-<h1>게시글 등록</h1>
+// 앞서 선언한 플러그인 의존성들을 적용할 것인지를 결정하는 코드
+// 자바와 스프링 부트를 사용하기 위한 필수 플러그인
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management' // 스프링 부트의 의존성을 관리해 주는 플러그인으로 반드시 추가해야 한다.
 
-<div class="col-md-12">
-    <div class="col-md-4">
-        <form>
-            <div class="form-group">
-                <label for="title">제목</label>
-                <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
-            </div>
-            <div class="form-group">
-                <label for="author">작성자</label>
-                <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요">
-            </div>
-            <div class="form-group">
-                <label for="content">내용</label>
-                <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
-            </div>
-        </form>
-        <a href="/" role="button" class="btn btn-secondary">취소</a>
-        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
-    </div>
-</div>
+group 'org.example'
+version '1.0-SNAPSHOT'
 
-{{>layout/footer}} 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile ('org.springframework.boot:spring-boot-starter-test')
+}
 ```
