@@ -1,19 +1,9 @@
 # 마크다운 테스트 파일
 
-- 마크 다운 hn 크기 테스트
-# h1
-- 일반
-## h2
-- 일반
+- 마크 다운 이미지 업로드 테스트
 
-### h3
-- 일반
+![](https://github.com/qlalzl9/TIL/blob/master/Algorithm/img/Frequency_Sort_1.jpg?raw=true)
 
-#### h4
-- 일반
+<p align="center"><img src = "https://github.com/qlalzl9/TIL/blob/master/Algorithm/img/Frequency_Sort_1.jpg" width="600px"></p>
 
-##### h5
-- 일반
-
-###### h6
-- 일반
+<p align="center"><img src = "https://github.com/qlalzl9/TIL/blob/master/Algorithm/img/Frequency_Sort_1.jpg"></p>
